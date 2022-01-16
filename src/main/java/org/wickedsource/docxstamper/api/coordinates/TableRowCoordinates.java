@@ -21,6 +21,7 @@ public class TableRowCoordinates extends AbstractCoordinates {
         return index;
     }
 
+    @Override
     public String toString() {
         String toString = String.format("paragraph at index %d", index);
         return parentTableCoordinates.toString() + "\n" + toString;

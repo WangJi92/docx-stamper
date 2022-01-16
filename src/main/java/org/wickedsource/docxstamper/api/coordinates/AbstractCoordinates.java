@@ -16,6 +16,7 @@ public abstract class AbstractCoordinates {
         return this.toString().hashCode();
     }
 
+    @Override
     public abstract String toString();
 
 }

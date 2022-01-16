@@ -37,6 +37,7 @@ public class ParagraphCoordinates extends AbstractCoordinates {
         return parentTableCellCoordinates;
     }
 
+    @Override
     public String toString() {
         String toString = String.format("paragraph at index %d", index);
         if (parentTableCellCoordinates != null) {

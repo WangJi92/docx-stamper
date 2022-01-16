@@ -26,6 +26,7 @@ public class TableCoordinates extends AbstractCoordinates {
         return index;
     }
 
+    @Override
     public String toString() {
         String toString = String.format("paragraph at index %d", index);
         if (parentTableCellCoordinates != null) {
