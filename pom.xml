@@ -17,9 +17,25 @@
     <dependencies>
         <dependency>
             <groupId>org.docx4j</groupId>
-            <artifactId>docx4j</artifactId>
-            <version>6.1.2</version>
+            <artifactId>docx4j-core</artifactId>
+            <version>8.3.2</version>
         </dependency>
+        <dependency>
+            <groupId>org.docx4j</groupId>
+            <artifactId>docx4j-JAXB-ReferenceImpl</artifactId>
+            <version>8.3.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.docx4j</groupId>
+            <artifactId>docx4j-ImportXHTML</artifactId>
+            <version>8.3.2</version>
+        </dependency>
+<!--        升级到最新版本-->
+<!--        <dependency>-->
+<!--            <groupId>org.docx4j</groupId>-->
+<!--            <artifactId>docx4j</artifactId>-->
+<!--            <version>6.1.2</version>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
