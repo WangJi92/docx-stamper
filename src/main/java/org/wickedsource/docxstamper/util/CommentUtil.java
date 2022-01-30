@@ -141,10 +141,17 @@ public class CommentUtil {
 	 */
 	public static String getCommentString(Comments.Comment comment) {
 		StringBuilder builder = new StringBuilder();
+		int index = 1;
 		for (Object commentChildObject : comment.getContent()) {
 			if (commentChildObject instanceof P) {
-				builder.append(new ParagraphWrapper((P) commentChildObject).getText());
+				//段落需要添加换行符
+				builder.append(new ParagraphWrapper((P)commentChildObject).getText());
+				if (index!=comment.getContent().size()) {
+					//最后一行不进行换行了.
+					builder.append("\n");
+				}
 			}
+			index++;
 		}
 		return builder.toString();
 	}
